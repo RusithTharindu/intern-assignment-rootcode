@@ -23,9 +23,9 @@ const Home = () => {
   },[])
 
   const handleSearchQuery = (query: string) => {
-    const filterPost = posts.filter((post) => {
+    const filterPost = posts.filter((post) => 
       post.title.toLowerCase().includes(query.toLowerCase())
-    })
+    )
     setFilteredPosts(filterPost);
   }
 
