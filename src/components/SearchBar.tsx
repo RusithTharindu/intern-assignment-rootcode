@@ -4,8 +4,8 @@ interface SearchProps {
 
 const SearchBar:React.FC<SearchProps> = ({ onSearch }) => {
     return(
-        <div className="w-full flex flex-col items-center mt-20 text-[15px]">
-            <p className="text-slate-600 font-bold mb-2">Need to find some RootLoops</p>
+        <div className="w-full flex flex-col items-center text-[15px]">
+            <p className="text-slate-600 text-[15px] font-bold mb-2">Need to find some RootLoops</p>
             <input
                 type="text"
                 placeholder="Search it here"

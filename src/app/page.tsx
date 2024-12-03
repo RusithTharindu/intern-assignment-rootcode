@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import {Post} from "../types/index"
 import SearchBar from "../components/SearchBar";
 import PostList from "../components/PostList"
+import ProfileData from "@/components/ProfileData";
 
 const Home = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <>
       <div>
+        <ProfileData/>
         <SearchBar onSearch={handleSearchQuery} />
         <PostList posts={filteredPosts} /> 
       </div>
