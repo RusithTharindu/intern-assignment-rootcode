@@ -3,6 +3,7 @@ import { Post } from "../types/index"
 import Button from "./Button";
 import { MessageCircle } from 'lucide-react';
 import { MessageCircleDashed } from 'lucide-react';
+import CommentsList from "./CommentsList";
 
 
 interface PostListProps {
@@ -30,6 +31,7 @@ const PostList: React.FC<PostListProps> = ({ posts }) => {
                             {selectedPostId === post.id ? <MessageCircleDashed size={24}/> : <MessageCircle size={24}/> }
                         </Button>
                     </div>
+                    {selectedPostId === post.id && <CommentsList postId={post.id} />}
                 </div>
             ))}
         </div>
