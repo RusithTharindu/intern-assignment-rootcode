@@ -11,3 +11,9 @@ export interface Comment {
     email: string;
     body: string;
 }
+
+export interface User {
+    name: string;
+    email: string;
+    username: string;
+}
